@@ -51,12 +51,13 @@ body {
 
 .header-nav__list {
   list-style: none;
+  display: flex;
 }
 
 .header-nav__link {
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #9db1a5;
   font-family: inherit;
   font-size: 16px;
   font-weight: bold;
@@ -64,6 +65,441 @@ body {
   text-align: left;
 }
 
-.user-panel__login{
-  
+.user-panel__btn {
+  width: 33px;
+  height: 33px;
+  border: none;
+  border-radius: 25px;
+  background-color: #9db1a5;
+}
+
+.user-panel__login {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #9db1a5;
+  padding-left: 44px;
+  padding-right: 13px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.user-panel__basket {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #9db1a5;
+  padding-left: 44px;
+  padding-right: 13px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.user-info__text {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  color: #ffffff;
+}
+
+.user-info__number {
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.09;
+  text-align: right;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-users {
+  margin-left: auto;
+}
+
+.main-page__slider {
+  background-color: #8996a6;
+}
+
+.slider-main__text {
+  font-family: inherit;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.01;
+  text-align: center;
+  color: #ffffff;
+  width: 680px;
+  min-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-main__list {
+  margin: 0;
+}
+
+.slides {
+  position: relative;
+  height: 900px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide:nth-of-type(1) {
+  background-color: #849d8f;
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+
+.slide:nth-of-type(2) {
+  background-color: #8996a6;
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+
+.slide:nth-of-type(3) {
+  background-color: #9d8b84;
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+
+.slider-main__link {
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.main-advantages {
+  background-color: #8996a6;
+}
+
+.main-advantages__list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-advantages__title {
+  font-family: inherit;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.17;
+  color: #ffffff;
+}
+
+.main-advantages__text {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.22;
+  text-align: left;
+}
+
+.main-advantages__link {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  opacity: 0.99;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.main_preview__price {
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-family: inherit;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  color: #ffffff;
+}
+
+.main_preview__price-simbol {
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
+}
+
+.main_preview {
+  background-color: #8996a6;
+}
+
+.main_preview__list {
+  margin: 0;
+  display: flex;
+}
+
+.main_preview__link {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+.shop-info {
+  background-color: #8996a6;
+}
+
+.shop-info__title {
+  margin: 0;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: left;
+  color: #323232;
+}
+
+.shop-info__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.shop-info__item {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: #323232;
+  width: 475px;
+}
+
+.main-news {
+  background-color: #8996a6;
+}
+
+.main-news__wrapper {
+  display: flex;
+}
+
+.main-news__about {
+  width: 560px;
+  min-height: 220px;
+}
+
+.main-news-sub {
+  width: 560px;
+  min-height: 220px;
+}
+
+.main-news__text {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: left;
+  color: #323232;
+}
+
+.main-news__link {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #323232;
+  border-bottom: 2px solid #323232;
+  text-decoration: none;
+}
+
+.main-news-sub__text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: #5a5a5a;
+}
+
+.main-news-sub__input {
+  width: 368px;
+  height: 44px;
+}
+
+.main-news-sub__send {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  color: #ffffff;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
+  border-radius: 20px;
+}
+
+.main-map {
+  text-align: center;
+}
+
+.user-info__title {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #323232;
+}
+
+.user-info__adres {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #323232;
+}
+
+.user-info__feedback {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #323232;
+}
+
+.user-info__nuber {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #323232;
+  text-decoration: none;
+}
+
+.user-info__popup-open {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  text-align: left;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border: none;
+  border-radius: 25px;
+}
+
+.footer {
+  background-color: #8996a6;
+}
+
+.footer-wrapper {
+  display: flex;
+}
+
+.footer-social {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-feedback__list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-feedback__link {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+.footer-feedback__link--bold {
+  font-weight: bold;
+}
+
+.footer-copyright__text {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  color: #fefefe;
+}
+
+.footer-copyright__name {
+  border-bottom: 1px solid #9db1a5;
 }
